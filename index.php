@@ -12,7 +12,10 @@
 
 <body>
 <div class="container">
-    <a class="btn btn-primary mt-4" href="new_user.php">Add New User</a>
+    <div class="d-flex align-items-center justify-content-between">
+        <a class="btn btn-primary mt-4" href="new_user.php">Add New User</a>
+        <a class="btn btn-primary mt-4" href="search.php">search</a>
+    </div>
     <br />
     <table class="table table-hover mt-2">
         <tr>
@@ -41,7 +44,7 @@
             if (!empty($image)) {
                 echo "<img src='$image' style='width: 50px; height: 50px; object-fit: cover; border-radius: 100%;'>";
             } else {
-                echo "<img src='uploads/default.jpg' style='width: 80px; height: 80px; object-fit: cover; border-radius: 10px;'>";
+                echo "<img src='uploads/default.jpg' style='width: 80px; height: 80px; object-fit: cover; border-radius: 100%;'>";
             }
 
             echo "<td>$name</td>";
